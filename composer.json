@@ -8,11 +8,17 @@
     }
   ],
   "require": {
-    "php": "~7.4"
+    "php": "~7.4",
+    "ext-curl": "*"
   },
   "name": "pavlomr/decorator",
   "description": "Decorator and singleton",
   "license": "MIT",
   "type": "library",
-  "minimum-stability": "stable"
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "pavlomr\\Service\\": "src"
+    }
+  }
 }

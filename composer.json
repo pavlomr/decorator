@@ -1,0 +1,18 @@
+{
+  "authors": [
+    {
+      "homepage": "https://www.facebook.com/pavel.marenyuk/",
+      "email": "pavlomr@gmail.com",
+      "name": "Pavlo Marenyuk",
+      "role": "Author"
+    }
+  ],
+  "require": {
+    "php": "~7.4"
+  },
+  "name": "pavlomr/decorator",
+  "description": "Decorator and singleton",
+  "license": "MIT",
+  "type": "library",
+  "minimum-stability": "stable"
+}

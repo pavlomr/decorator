@@ -4,36 +4,28 @@ namespace pavlomr\Service\Consumer;
 
 interface DecoratorInterface
 {
-    /**
-     * @return string[]
-     */
     public function getAuth(): array;
 
     /**
      * @param $auth
-     * @return DecoratorInterface
+     *
+     * @return $this
      */
     public function setAuth($auth): DecoratorInterface;
 
-    /**
-     * @return string
-     */
     public function getPath(): string;
 
     /**
      * @param string $path
-     * @return DecoratorInterface
+     * @return $this
      */
     public function setPath(string $path): DecoratorInterface;
 
-    /**
-     * @return string
-     */
     public function getBase(): string;
 
     /**
      * @param string $base
-     * @return DecoratorInterface
+     * @return $this
      */
     public function setBase(string $base): DecoratorInterface;
 }

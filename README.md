@@ -1,2 +1,3 @@
-# decorator
-Decorator
+# pavlomr/decorator
+
+Decorator and singleton

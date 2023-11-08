@@ -12,7 +12,7 @@ trait SingletonTrait
     /**
      * @return static
      */
-    public static function getInstance(): self
+    public static function getInstance(): static
     {
         if (!isset(self::$_map[static::class])) {
             self::$_map[static::class] = new static();

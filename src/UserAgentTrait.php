@@ -18,7 +18,7 @@ trait UserAgentTrait
     {
         /** @var string $userAgent */
         static $userAgent = null;
-        if (!$userAgent) {
+        if (null === $userAgent) {
             $parentsChain = [];
             try {
                 $parent          = $reflection = new ReflectionClass(static::class);
@@ -27,7 +27,7 @@ trait UserAgentTrait
                 while ($parent = $parent->getParentClass()) {
                     $parentsChain[] = $parent->getShortName();
                 }
-            } catch (Exception $exception) {
+            } catch (Exception) {
                 $callerClass     = $callerClass ?? 'UnknownCaller';
                 $callerNamespace = $callerNamespace ?? __NAMESPACE__;
             }

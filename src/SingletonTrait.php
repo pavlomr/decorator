@@ -5,7 +5,7 @@ namespace pavlomr\Service;
 trait SingletonTrait
 {
     /**
-     * @var self[]
+     * @var static[]
      */
     private static array $_map = [];
 
